@@ -1,19 +1,118 @@
-body
-{
-    color:red;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+    --primary-color:#7C3AED;
+    --dark-gray:#6B7280;
 }
 
-h1
-{
-    color:blue;
+
+body{
+    font-family: 'Montserrat', 
+    sans-serif;
 }
 
-#lib-header
-{
-    color:gray;
+hr{
+    margin:2rem 0rem;
 }
 
-.para
+/** container **/
+.container {
+    padding-left:1rem;
+    padding-right: 1rem;
+    /** or can write as
+    padding:0rem 1rem
+    0 for both t&b
+    1for both r&l**/
+}
+
+.container-center
 {
-    color:pink;
+    max-width: 600px;
+    margin: auto;
+
+}
+
+/** links **/
+.link{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+/* read about BEM naming convention
+for CSS, it should be link-primary*/
+
+.primary-link{
+    background-color:
+    var(--primary-color) ;
+    border-radius:0.5rem;
+    color:white;
+}
+
+.secondary-link{
+    color:var(--primary-color);
+    border-radius:0.5rem;
+    border:1px solid 
+    var(--primary-color);
+}
+
+/*lists*/
+
+.non-bullet{
+    list-style: none;
+
+}
+
+.list-inline{
+    display:inline;
+    padding:0rem 0.5rem;
+}
+
+.navigation{
+    background-color:var(--primary-color);
+    color:white;
+    padding:1rem;
+    border-bottom-left-radius: 1rem ;
+}
+
+.navigation .nav-brand{
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/*
+best webiste is CSS tricks
+overwriting color - if found link 
+class in navigation class*/
+.navigation .link{
+    color:white;
+    
+}
+
+.navigation .nav-pills{
+    text-align:right; 
+
+}
+
+.navigation .link-active{
+    font-weight: bold;
+}
+
+.hero{
+    padding:0rem 2rem;
+
+}
+
+.hero .hero-img{
+    max-width: 350px;
+    display:block;
+    margin: auto;
+}
+
+.hero .hero-heading{
+    padding-top: 1rem;
+    color: var(--dark-gray);
+}
+
+.hero .hero-heading .heading-inverted{
+    color:var(--primary-color);
 }
