@@ -1,83 +1,15 @@
-<!--used html:5 emmet abbreviation-->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- things under head is for browers not for users, won't display on screen-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Component Library</title>
-    <!--
-   
--->
-    <link href="style.css" rel="stylesheet" />
+    <title>home | portfolio</title>
+    <link href="/style.css" rel="stylesheet" />
 </head>
-
 <body>
-    <h1 id="lib-header">vaibhav's component library</h1>
-    <p class="para">Hi, I am Vaibhav Agrawal. I am making a component library for HTMl components
-        which I learned from freecodecamp.org to kind of summarize my learning and
-        remeber the important useful things out of it.<br> <br>I lived the concept of https://motherfuckingwebsite.com/
-        to feel the power of html alone</p>
-    <hr>
-    <h2>@typography</h2>
-    <h1>This is the biggest heading</h1>
-    <h2>This is the second biggest heading</h2>
-    <p>This one is the normal text. It is freeflowing and will wrap by the end. Lika a paragraph</p>
-    <small>This is relatively smaller text</small>
-    <hr>
-
-    <h2>@containers</h2>
-    <h3>fluid container</h3>
-    <!--more than one classes can also be added to class-->
-    <div class="container">This is fluid container and it will go till the end of the page/full width. With some margin.
-    </div>
-    <h3>center container</h3>
-    <div class="container container-center">This is center container and it will go till a given width, and center centered</div>
-    <hr>
-
-    <h2>@links</h2>
-    <!--block elements - start with new line always & have top & bottom margin
-            inline elements - don't start with new line
-            #to understnd or visualize it use inspect element on h2 vs on anchor tag
-        -->
-    <a class ="link primary-link" href="/">Primary Link </a>
-    <a class="link secondary-link" href="/">Secondary Link </a>
-    <hr>
-
-    <h2>@lists</h2>
-    <h3>unordered list</h3>
-    <ul class="non-bullet">
-        <li>Item one</li>
-        <li>Item two</li>
-        <li>Item three</li>
-    </ul>
-
-    <h3>ordered list</h3>
-    <ol>
-        <li>Item one</li>
-        <li>Item two</li>
-        <li>Item three</li>
-    </ol>
-
-    <h3>unordered inline list</h3>
-    <ul class="non-bullet">
-        <li class="list-inline">Inline item one </li>
-        <li class="list-inline">Inline item two</li>
-        <li class="list-inline">Inline item two</li>
-    </ul>
-
-    <h3>reverse ordered list</h3>
-    <ol reversed>
-        <li>milk</li>
-        <li>eggs</li>
-        <li>bread</li>
-    </ol>
-    <hr>
-
-
-    <h2>@nav</h2>
+    
+    
     <nav class="navigation container">
         <div class="nav-brand">
             i am developer
@@ -87,30 +19,19 @@
                 <a  class="link link-active" href="/">home</a>
             </li>
             <li class="list-inline">
-                <a class="link" href="/">projects</a>
+                <a class="link" href="projects.html">projects</a>
             </li>
             <li class="list-inline">
-                <a class="link" href="/">blogs</a>
+                <a class="link" href="blogs.html">blogs</a>
             </li>
         </ul>
     </nav>
-    <hr>
-<!--Span is inline element-->
-    <h2>@header</h2>
+
     <header class="hero">
         <img class="hero-img"  src="images\dev.png" />
         <h1 class="hero-heading" ><span class="heading-inverted">heading</span>
-             insdie header</h1>
+             inside header</h1>
     </header>
-    <hr>
-
-    <h2>@section</h2>
-    <section class="section">
-      <div class="container-center">
-        <h1>white section</h1>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-      </div>
-    </section>
 
     <section class="section ow ">
         <div class="container-center">
@@ -118,28 +39,41 @@
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
       </div>
             </section>
-    <hr>
-    <h2>@footer</h2>
-    <footer class="footer">
-        <div class="footer-header">some small heading inside footer</div>
-        <ul class="social-links non-bullet">
-            <li class="list-inline">
-                <a class="link" href="/">socialone links</a>
-            </li>
-            <li class="list-inline">
-                <a class="link" href="/">socialtwo links</a>
-            </li>
-            <li class="list-inline">
-                <a class="link" href="/">socialthree links</a>
-            </li>
-        </ul>
 
-    </footer>
+            <section class="section">
+              <div class="container-center">
+                <h1>white section</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <a class ="link primary-link" href="/">Primary Link </a>
+   
+            </div>
+            </section>
 
-    <!--command shift  + p -> pallete to butify the file, extension in VS
-            image source - https://undraw.co/search
-            colour scheme - https://tailwindcss.com/docs/customizing-colors
-        -->
+            <section class="section ow ">
+                <div class="container-center">
+                    <h1>off white background</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                    <a class="link secondary-link" href="/">Secondary Link </a>
+
+                </div>
+                    </section>
+                   
+                    <footer class="footer">
+                        <div class="footer-header">some small heading inside footer</div>
+                        <ul class="social-links non-bullet">
+                            <li class="list-inline">
+                                <a class="link" href="/">socialone links</a>
+                            </li>
+                            <li class="list-inline">
+                                <a class="link" href="/">socialtwo links</a>
+                            </li>
+                            <li class="list-inline">
+                                <a class="link" href="/">socialthree links</a>
+                            </li>
+                        </ul>
+                
+                    </footer>
+                
+
 </body>
-
 </html>

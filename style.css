@@ -38,6 +38,7 @@ hr{
 .link{
     text-decoration: none;
     padding: 0.5rem 1rem;
+ 
 }
 
 /* read about BEM naming convention
@@ -48,6 +49,7 @@ for CSS, it should be link-primary*/
     var(--primary-color) ;
     border-radius:0.5rem;
     color:white;
+    margin-right: 0.5rem;
 }
 
 .secondary-link{
@@ -142,6 +144,11 @@ class in navigation class*/
     text-align: center;
     color:white;
     border-top-right-radius: 1rem;
+}
+
+.footer .footer-header{
+    font-weight: bold;
+    font-size: large;
 }
 
 .footer .link{
