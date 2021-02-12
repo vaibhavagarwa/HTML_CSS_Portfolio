@@ -95,7 +95,7 @@
         </ul>
     </nav>
     <hr>
-
+<!--Span is inline element-->
     <h2>@header</h2>
     <header class="hero">
         <img class="hero-img"  src="images\dev.png" />
@@ -105,22 +105,33 @@
     <hr>
 
     <h2>@section</h2>
-    <section>
-        <h3>white section</h3>
-        <p>This will have white background</p>
+    <section class="section">
+      <div class="container-center">
+        <h1>white section</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+      </div>
     </section>
 
-    <section>
-        <h3>off white background</h3>
-        <p>This will have grey background</p>
-    </section>
+    <section class="section ow ">
+        <div class="container-center">
+            <h1>off white background</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+      </div>
+            </section>
     <hr>
     <h2>@footer</h2>
-    <footer>
-        <div>some small heading inside footer</div>
-        <ul>
-            <li>socialone links</li>
-            <li>socialtwo link</li>
+    <footer class="footer">
+        <div class="footer-header">some small heading inside footer</div>
+        <ul class="social-links non-bullet">
+            <li class="list-inline">
+                <a class="link" href="/">socialone links</a>
+            </li>
+            <li class="list-inline">
+                <a class="link" href="/">socialtwo links</a>
+            </li>
+            <li class="list-inline">
+                <a class="link" href="/">socialthree links</a>
+            </li>
         </ul>
 
     </footer>
